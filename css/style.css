@@ -1,0 +1,456 @@
+body{
+	margin: 0px;
+	transition: all 1s;
+}
+@font-face {
+    font-family: 'Nunito-Bold';
+    src:url(../fonts/Nunito-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src:url(../fonts/OpenSans-Regular.ttf) format('truetype');
+}
+.mainHeader{
+	position: fixed; 
+    top: -60px; 
+    transition: all 0.5s;
+    width: 99vw;
+    z-index: 1;
+}
+.home{
+		
+}
+.header-section {
+  background: #deecdf;
+  background-image: url('../img/1.jpg');
+  text-align: center;
+  min-height: 500px;
+}
+.header-section img {
+  margin-top: 7em;
+}
+.header-section h2 {
+  font-family: 'Nunito-Bold';
+  font-size: 4em;
+  text-transform: capitalize;
+  color: #393b3a;
+  padding: 0.5em 0 0 0;
+}
+.header-section span {
+  color: #00cfbd;
+  font-size: 1em;
+}
+.header-section p {
+  font-family: 'Nunito-Bold';
+  font-size: 1.3em;
+  color: #393b3a;
+}
+span.glyphicon.glyphicon-triangle-bottom {
+  font-size: 2em;
+  color: #fff;
+  background-color: rgb(0, 207, 189);
+  padding: 0.5em 2em;
+  border-radius: 5px 5px 0 0;
+  margin-top: 2.5em;
+}
+.about{
+	background-size: cover;
+	background: #deecdf;
+/* 	background-image: url('../img/1.jpg');
+ */	padding-bottom: 5vw;
+	text-align: center;
+}
+.about h3{
+	font-family: 'Nunito-Bold';
+  	font-size: 2.5em;
+  	text-transform: capitalize;
+  	color: #393b3a;
+  	padding-bottom: 2%;
+}
+.yourPic{
+	    padding-left: 0%;
+	    transition:  all 0.5s;
+}
+@media only screen and (min-width:200px) and (max-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+	.yourPic{
+	    padding-left: 0%;
+	}
+}
+@media only screen and (min-width:321px) and (max-width:400px)  { /* smartphones, Android phones, landscape iPhone */
+	.yourPic{
+	    padding-left: 10%;
+	}
+}
+@media only screen and (min-width:401px) and (max-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+	.yourPic{
+	    padding-left: 25%;
+	}
+	
+}
+@media only screen and (min-width:601px) and (max-width:767px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+	.yourPic{
+	    padding-left: 30%;
+	}
+}
+@media only screen and (max-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media only screen and (max-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+}
+@media only screen and (max-width:1281px) { /* hi-res laptops and desktops */ 
+}
+
+.skills{
+}
+.experience{
+	background-color: rgba(255,244,1,0.4);	height: 100vh;
+	text-align: center;	
+}
+.experience h3{
+	font-family: 'Nunito-Bold';
+  	font-size: 2.5em;
+  	text-transform: capitalize;
+  	color: #393b3a;
+}
+.projects{
+	background-color: rgba(25,244,1,0.4);
+	padding: 5%;
+	text-align: center;	
+
+}
+.projects h3{
+	font-family: 'Nunito-Bold';
+  	font-size: 2.5em;
+  	text-transform: capitalize;
+  	color: #393b3a;
+  	margin-bottom: 2%;
+}
+.hero{
+  width: 100%;
+  height: 40%;
+  background: #3498db;
+  display: table;
+}
+
+h1{
+  color: #2c3e50;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+}
+
+.figure{
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border: 5px solid #fff;
+  box-shadow: 0 0 5px #ddd;
+  margin: 1em;
+}
+
+.figcaption{
+  position: absolute;
+  left: 0; right: 0;
+  top: 50%; bottom: 0;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.figcaption div{
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  top: 0px;
+  opacity: 0;
+  color: #2c3e50;
+  text-transform: uppercase;
+}
+
+.figcaption div:after{
+  position: absolute;
+  content: "";
+  left: 0; right: 0;
+  bottom: 50%;
+  text-align: center;
+  margin: auto;
+  width: 0%;
+  height: 2px;
+  background: #2c3e50;
+}
+
+.figure img{
+  -webkit-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.figure:hover .figcaption{
+ background: rgba(255,255,255,0.3);
+}
+.figure:hover .figcaption div{
+  opacity: 1;
+}
+.figcaption:hover div{
+  opacity: 1;
+  top: 0;
+}
+
+.figcaption:hover div:after{
+  width: 50%;
+}
+
+.figure:hover img{
+  -webkit-transform: scale3d(1.2, 1.2, 1);
+          transform: scale3d(1.2, 1.2, 1);
+}
+#about{
+	padding-top: 10vh;
+}
+.carousel-content {
+    color:black;
+    display:flex;
+    align-items:center;
+}
+
+#text-carousel {
+  width: 100%;
+  height: auto;
+  padding: 17%;
+}
+
+*, *::before, *::after{
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+
+/*font-face*/
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), local('Lato-Hairline'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/boeCNmOCCh-EWFLSfVffDg.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #774040;
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px;
+    font-size: 18px;	
+    transition: all 2s;
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.study-section {
+  padding: 4em 0;
+}
+.study-grid h3 {
+  font-family: 'Nunito-Bold';
+  font-size: 2.5em;
+  text-transform: capitalize;
+  color: #393b3a;
+  
+}
+.study-grid span {
+  color: #00cfbd;
+  font-size: 0.9em;
+}
+.study-grid p {
+  font-size: 1.2em;
+  color: #393b3a;
+  padding: 1.1em 0 0 0;
+  }
+.study-grid label {
+  font-size: 0.8em;
+  color: #9CA69D;
+  margin: 0 0 0 7px;
+}
+.progress {
+	margin: 10px 0;
+	 box-shadow: none;
+}
+.progress-bar-success {
+  background-color: #DEECDF;
+   box-shadow: none;
+}
+.progress-bar-info {
+  background-color: #ACB5B8;
+    box-shadow: none;
+}
+.progress-bar-warning {
+  background-color: #78B3AE;
+   box-shadow: none;
+}
+.progress-bar-danger {
+  background-color: #8C9D82;
+  box-shadow: none;
+  }
+.study-grid h4 {
+  font-size: 1.3em;
+  text-transform: capitalize;
+  color: rgb(29, 26, 26);
+  }
+.study1 {
+  padding: 1em 0 0;
+}
+.study2 {
+  padding: 2em 0 0;
+}
+.service-section {
+  text-align: center;
+  padding: 4em 0;
+}
+.service-grid h4 {
+  font-size: 1.5em;
+  margin: 0.9em 0;
+    font-family: 'Nunito-Bold';
+}
+.service-grid p {
+  font-size: 1em;
+  font-weight: 400;
+  color: #9CA69D;
+    line-height: 1.8em;
+}
+span.glyphicon.glyphicon-pencil {
+  font-size: 2em;
+  color: #C6D9C7;
+  border-radius: 50px;
+  border: 2px solid;
+  padding: 1em;
+}
+span.glyphicon.glyphicon-phone{
+font-size: 2em;
+  color: #C6D9C7;
+  border-radius: 50px;
+  border: 2px solid;
+  padding: 1em;
+}
+span.glyphicon.glyphicon-signal{
+font-size: 2em;
+  color: #C6D9C7;
+  border-radius: 50px;
+  border: 2px solid;
+  padding: 1em;
+}
+.contactMe{
+
+}
+.contact-section {
+  padding: 4em 0;
+  background: #deecdf;
+ 
+ }
+.contact-section h3 {
+    font-family: 'Nunito-Bold';
+  font-size: 2.5em;
+  text-transform: capitalize;
+  color: #393b3a;
+  text-align: center;
+  margin-bottom: 2em;
+
+}
+.contact-details form input[type="text"],.contact-details form textarea {
+	width: 100%;
+	padding: 1.5em 1em;
+	border: 1px solid #7ca17f;
+	font-size: 1.1em;
+	margin-bottom: 1.2em;
+	color: #Aac8ac;
+	outline: none;
+	background:transparent;
+	font-weight: 600;
+}
+.contact-details form textarea {
+	height: 244px;
+	resize: none;
+	width: 100%;
+}
+.contact-right{
+	text-align:right;
+}
+.contact-details input[type="submit"] {
+	background: #393b3a;
+	padding: 1em 2em;
+	border: none;
+	font-size: 1em;
+	margin: 0.5em 0 0 0;
+	color: #fff;
+	outline: none;
+	font-weight: 600;
+	border-radius:5px;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+.contact-details input[type="submit"]:hover {
+  color: #fff;
+  background: rgb(0, 207, 189);
+}
+.mainFooter{
+	background-color: #000000;
+	color: #ffffff;
+}
+.footer-top{
+	text-align: center;
+	font-family: 'Nunito-Bold';
+  	font-size: 1em;
+  	text-transform: capitalize;
+  	padding-top: 10px;
+}
+.panel-default>.panel-heading {
+    background-color: #b86689;
+}
+.navbar-inverse .navbar-nav>li:hover {
+    background-color: #9d9d9d;
+    color: white;
+    border-radius: 4px;
+}
+.navbar-inverse {
+    background-color: #292828cf;
+    border: none;
+}
