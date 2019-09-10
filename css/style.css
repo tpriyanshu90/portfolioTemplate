@@ -11,11 +11,13 @@ body{
     src:url(../fonts/OpenSans-Regular.ttf) format('truetype');
 }
 .mainHeader{
-	position: fixed; 
+	  position: fixed; 
     top: -60px; 
     transition: all 0.5s;
-    width: 99vw;
+    width: 100vw;
     z-index: 1;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 .home{
 		
@@ -451,6 +453,6 @@ font-size: 2em;
     border-radius: 4px;
 }
 .navbar-inverse {
-    background-color: #292828cf;
+    background-color: #000000;
     border: none;
 }
