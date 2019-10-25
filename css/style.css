@@ -27,6 +27,7 @@ body{
   background-image: url('../img/1.jpg');
   text-align: center;
   min-height: 500px;
+  height:100vh;
 }
 .header-section img {
   margin-top: 7em;
