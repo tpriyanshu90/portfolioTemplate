@@ -19,9 +19,31 @@ body{
     padding-left: 0px;
     padding-right: 0px;
 }
-.home{
-		
+/* CSS for the powerful blue neon glowing text effect */
+.neon-text {
+  font-size: 48px; /* Adjust font size as needed */
+  color: #00c3ff; /* Text color */
+  text-shadow: 0 0 5px #00c3ff, 0 0 20px #00c3ff, 0 0 40px #00c3ff, 0 0 80px #00c3ff, 0 0 120px #00c3ff, 0 0 140px #00c3ff, 0 0 180px #00c3ff; /* Multiple shadows for the powerful neon effect */
+  animation: glowing 1.5s ease-in-out infinite alternate; /* Adjust duration and animation timing as needed */
 }
+.neon-text-1 {
+  /* font-size: 48px; Adjust font size as needed */
+  color: #00c3ff; /* Text color */
+  text-shadow: 0 0 5px #00c3ff, 0 0 20px #00c3ff, 0 0 40px #00c3ff, 0 0 80px #00c3ff, 0 0 120px #00c3ff, 0 0 140px #00c3ff, 0 0 180px #00c3ff; /* Multiple shadows for the powerful neon effect */
+  animation: glowing 1.5s ease-in-out infinite alternate; /* Adjust duration and animation timing as needed */
+}
+
+/* Keyframes for the glowing animation */
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 5px #00c3ff, 0 0 20px #00c3ff, 0 0 40px #00c3ff, 0 0 80px #00c3ff, 0 0 120px #00c3ff, 0 0 140px #00c3ff, 0 0 180px #00c3ff; /* Initial neon glow color and size */
+  }
+  100% {
+    text-shadow: 0 0 10px #00c3ff, 0 0 40px #00c3ff, 0 0 80px #00c3ff, 0 0 160px #00c3ff, 0 0 240px #00c3ff, 0 0 280px #00c3ff, 0 0 360px #00c3ff; /* Increased neon glow color and size */
+  }
+}
+
+/* HTML element that will have the glowing effect */
 .header-section {
   background: #deecdf;
   background-image: url('../img/1.jpg');
