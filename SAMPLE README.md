@@ -2,11 +2,7 @@
 
 This is a portfolioTemplate website template designed to showcase your work or personal information.
 
-![Preview] 
-![s1](https://github.com/Arshdeep-13/portfolioTemplate/assets/108752646/ee99e60f-443a-4ed2-83c7-9a14b0abcc26)
-![s3](https://github.com/Arshdeep-13/portfolioTemplate/assets/108752646/f7042bf7-0b30-4300-8cf1-1e226cd45ee0)
-![s2](https://github.com/Arshdeep-13/portfolioTemplate/assets/108752646/0510814b-54fa-4360-b41b-cb0a2daf0db7)
-)
+![Preview]()
 
 ## Features
 
